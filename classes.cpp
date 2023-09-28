@@ -294,7 +294,81 @@ public:
     }
 };
 
-int main(){
+int main() {
+    // Criando um objeto da classe Livro
+    Livro meuLivro;
+    meuLivro.setTitulo("O Senhor dos Anéis");
+    meuLivro.setAutor("J.R.R. Tolkien");
+    meuLivro.setAnoPublicacao(1954);
+    meuLivro.setGenero("Fantasia");
+    meuLivro.setEditora("Editora Martins");
+
+    // Criando um objeto da classe Celular
+    Celular meuCelular;
+    meuCelular.setMarca("Samsung");
+    meuCelular.setModelo("Galaxy S21");
+    meuCelular.setSistemaOperacional("Android");
+    meuCelular.setTamanhoTela("6.2 polegadas");
+    meuCelular.setArmazenamento("128 GB");
+    meuCelular.setBateria("4000 mAh");
+    meuCelular.setProcessador("Snapdragon 888");
+
+    // Criando um objeto da classe Mamífero
+    Mamifero meuMamifero;
+    meuMamifero.setNomeCientifico("Panthera leo");
+    meuMamifero.setHabitat("Savanas");
+    meuMamifero.setDieta("Carnívoro");
+    meuMamifero.setTipoLocomocao("Quadrúpede");
+
+    // Criando um objeto da classe Ave
+    Ave minhaAve;
+    minhaAve.setNomeCientifico("Ara ararauna");
+    minhaAve.setHabitat("Florestas tropicais");
+    minhaAve.setDieta("Frutas e sementes");
+    minhaAve.setTipoLocomocao("Voo");
+
+    // Criando um objeto da classe Flor
+    Flor minhaFlor;
+    minhaFlor.setnome_cientifico("Rosa");
+    minhaFlor.setFamilia("Rosaceae");
+    minhaFlor.setCor("Vermelha");
+    minhaFlor.setEstrutura("Pétalas e espinhos");
+
+    // Imprimindo informações sobre os objetos
+    cout << "Informações sobre o Livro:" << endl;
+    cout << "Título: " << meuLivro.getTitulo() << endl;
+    cout << "Autor: " << meuLivro.getAutor() << endl;
+    cout << "Ano de Publicação: " << meuLivro.getAnoPublicacao() << endl;
+    cout << "Gênero: " << meuLivro.getGenero() << endl;
+    cout << "Editora: " << meuLivro.getEditora() << endl;
+
+    cout << "\nInformações sobre o Celular:" << endl;
+    cout << "Marca: " << meuCelular.getMarca() << endl;
+    cout << "Modelo: " << meuCelular.getModelo() << endl;
+    cout << "Sistema Operacional: " << meuCelular.getSistemaOperacional() << endl;
+    cout << "Tamanho da Tela: " << meuCelular.getTamanhoTela() << endl;
+    cout << "Armazenamento: " << meuCelular.getArmazenamento() << endl;
+    cout << "Bateria: " << meuCelular.getBateria() << endl;
+    cout << "Processador: " << meuCelular.getProcessador() << endl;
+
+    cout << "\nInformações sobre o Mamífero:" << endl;
+    cout << "Nome Científico: " << meuMamifero.getNomeCientifico() << endl;
+    cout << "Habitat: " << meuMamifero.getHabitat() << endl;
+    cout << "Dieta: " << meuMamifero.getDieta() << endl;
+    cout << "Tipo de Locomoção: " << meuMamifero.getTipoLocomocao() << endl;
+
+    cout << "\nInformações sobre a Ave:" << endl;
+    cout << "Nome Científico: " << minhaAve.getNomeCientifico() << endl;
+    cout << "Habitat: " << minhaAve.getHabitat() << endl;
+    cout << "Dieta: " << minhaAve.getDieta() << endl;
+    cout << "Tipo de Locomoção: " << minhaAve.getTipoLocomocao() << endl;
+
+    cout << "\nInformações sobre a Flor:" << endl;
+    cout << "Nome Científico: " << minhaFlor.getnome_cientifico() << endl;
+    cout << "Família: " << minhaFlor.getFamilia() << endl;
+    cout << "Cor: " << minhaFlor.getCor() << endl;
+    cout << "Estrutura: " << minhaFlor.getEstrutura() << endl;
 
     return 0;
 }
+
