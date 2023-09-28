@@ -57,8 +57,8 @@ public:
     }
 
     // Métodos de modificação (setters)
-    void setPontos(const vector<Ponto>& p) {
-        pontos = p;
+    void setPontos(Ponto p) {
+        pontos.push_back(p);
     }
 };
 
@@ -74,13 +74,14 @@ int main(){
     cout << "Ponto Y: " << meuPonto.getY() << endl;
 
     // Criando um objeto da classe Poligono
-    vector<Ponto> pontosDoPoligono;
-    pontosDoPoligono.push_back(Ponto(meuPonto.getX(), meuPonto.getY())); // Adicionando um ponto ao polígono
-
-    Poligono meuPoligono(pontosDoPoligono);
+    Poligono pontosDoPoligono;
+    pontosDoPoligono.setPontos(meuPonto); // Adicionando um ponto ao polígono
 
     // Imprimindo informações sobre os objetos
-    cout << "Pontos do Poligono: " << meuPoligono.getPontos().size() << " ponto(s)" << endl;
+    cout << "Pontos do Poligono: " << pontosDoPoligono.getPontos().size() << " ponto(s)" << endl;
+
+    for(Ponto p:pontosDoPoligono.getPontos())
+        cout << "(" << p.getX() << ", "<< p.getY() << ")" << endl;
 
     return 0;
 }
