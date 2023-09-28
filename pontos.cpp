@@ -75,7 +75,7 @@ int main(){
 
     // Criando um objeto da classe Poligono
     vector<Ponto> pontosDoPoligono;
-    pontosDoPoligono.push_back(Ponto(0.2, 0.2)); // Adicionando um ponto ao polígono
+    pontosDoPoligono.push_back(Ponto(meuPonto.getX(), meuPonto.getY())); // Adicionando um ponto ao polígono
 
     Poligono meuPoligono(pontosDoPoligono);
 
