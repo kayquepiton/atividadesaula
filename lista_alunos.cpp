@@ -69,9 +69,9 @@ public:
     void salvar(const string &filename) {
         ofstream out(filename);
         for (const Aluno &a : alunos) {
-            out << a.getNome() << "\n";
-            out << a.getEmail() << "\n";
-            out << a.getNota1() << "\n";
+            out << a.getNome() << ", ";
+            out << a.getEmail() << ", ";
+            out << a.getNota1() << ", ";
             out << a.getNota2() << "\n";
         }
         out.close();
@@ -102,7 +102,7 @@ int main() {
     int escolha;
 
     do {
-        cout << "Menu:\n";
+        cout << "\nMenu:\n";
         cout << "1. Inserir aluno\n";
         cout << "2. Alterar aluno\n";
         cout << "3. Excluir aluno\n";
@@ -117,7 +117,7 @@ int main() {
         double nota1, nota2;
         switch (escolha) {
             case 1:
-                cout << "Nome: ";
+                cout << "\nNome: ";
                 getline(cin, nome);
                 cout << "Email: ";
                 getline(cin, email);
@@ -128,7 +128,7 @@ int main() {
                 bd.inserirAluno(Aluno(nome, email, nota1, nota2));
                 break;
             case 2:
-                cout << "Email do aluno a ser alterado: ";
+                cout << "\nEmail do aluno a ser alterado: ";
                 getline(cin, email);
                 cout << "Novo nome: ";
                 getline(cin, nome);
@@ -141,7 +141,7 @@ int main() {
                 bd.alterarAluno(email, Aluno(nome, email, nota1, nota2));
                 break;
             case 3:
-                cout << "Email do aluno a ser excluido: ";
+                cout << "\nEmail do aluno a ser excluido: ";
                 getline(cin, email);
                 bd.excluirAluno(email);
                 break;

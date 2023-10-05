@@ -1,4 +1,2 @@
-Kayque Almeida Piton
-kayquepiton@gmail.com
-10
-8
+Kayque, kayquepiton@gmail.com, 10, 8
+Lucas, lucas@gmail.com, 5, 6
