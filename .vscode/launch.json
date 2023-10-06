@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/kayque-almeida-piton/atividadesAula",
-      "program": "/home/kayque-almeida-piton/atividadesAula/build/Debug/outDebug",
+      "cwd": "/home/kayque-almeida-piton/atividadesaula",
+      "program": "/home/kayque-almeida-piton/atividadesaula/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
